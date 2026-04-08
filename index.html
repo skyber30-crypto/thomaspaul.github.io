@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>S. Thomas Paul | Portfolio</title>
 
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -28,12 +33,29 @@ header h1 {
     height: 25px;
 }
 
-<img src="https://drive.google.com/file/d/1vXrCc2cppvvjiRFo2FtEITAmsaG5rUBG/view?usp=sharing">
+/* PROFILE */
 .profile {
-    width: 150px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
     border-radius: 50%;
     margin-top: 20px;
-    border: 3px solid #38bdf8;
+    border: 4px solid #38bdf8;
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* EXPERIENCE HIGHLIGHT */
+.highlight {
+    text-align: center;
+    padding: 20px;
+}
+
+.highlight-box {
+    display: inline-block;
+    padding: 15px 25px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 /* SECTION */
@@ -74,15 +96,14 @@ section {
     margin-top: 10px;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     background: #020617;
     color: #94a3b8;
 }
-</style>
 
+</style>
 </head>
 
 <body>
@@ -90,66 +111,102 @@ footer {
 <header>
     <h1>S. Thomas Paul</h1>
     <div class="typing" id="typing"></div>
-    <img src="https://via.placeholder.com/150" class="profile">
+
+    <!-- ADD YOUR PHOTO -->
+    <img src="profile.jpg" class="profile" alt="Thomas Paul">
 </header>
+
+<div class="highlight">
+    <div class="highlight-box">
+        ⭐ 19+ Years Experience | IT Infrastructure | Cyber Security | Cloud
+    </div>
+</div>
 
 <section>
     <h2>👤 About Me</h2>
     <div class="card">
-        19+ years of experience in IT Infrastructure, Cyber Security, Cloud, and Networking.
-        Leading enterprise IT operations across PAN India with strong expertise in security and cloud platforms.
+        Senior IT Infrastructure Manager with 19+ years of experience in managing enterprise IT environments, cybersecurity, cloud platforms, and networking across PAN India.
     </div>
 </section>
 
+<!-- UPDATED SKILLS -->
 <section>
-    <h2>💼 Skills</h2>
+    <h2>💼 Core Skills</h2>
     <div class="grid">
-        <div class="card">🖥️ Windows Server & Active Directory</div>
-        <div class="card">🐧 Linux Administration</div>
-        <div class="card">☁️ Microsoft 365 & Azure</div>
-        <div class="card">🌐 Networking (DNS, DHCP, VPN)</div>
-        <div class="card">🔐 Cyber Security (EDR, DLP, MFA)</div>
-        <div class="card">🔥 FortiGate Firewall / VPN / SD-WAN</div>
+
+        <div class="card"><i class="fas fa-cloud"></i> Microsoft 365 (Exchange, Teams, SharePoint)</div>
+        <div class="card"><i class="fas fa-user-shield"></i> Azure AD / Entra ID</div>
+        <div class="card"><i class="fas fa-envelope"></i> Exchange Online</div>
+        <div class="card"><i class="fas fa-cogs"></i> Power Automate</div>
+        <div class="card"><i class="fas fa-shield-alt"></i> Security & Compliance</div>
+        <div class="card"><i class="fas fa-bug"></i> Microsoft Defender</div>
+        <div class="card"><i class="fas fa-terminal"></i> PowerShell</div>
+
+        <div class="card"><i class="fas fa-server"></i> Windows Server & Active Directory</div>
+        <div class="card"><i class="fas fa-linux"></i> Linux Administration</div>
+        <div class="card"><i class="fas fa-network-wired"></i> Networking (DNS, VPN)</div>
+        <div class="card"><i class="fas fa-fire"></i> FortiGate Firewall</div>
+        <div class="card"><i class="fas fa-users"></i> IT Team Management</div>
+
     </div>
 </section>
 
 <section>
     <h2>🏢 Experience</h2>
-    <div class="card">Sr.Manager IT – Monotech Systems Limited</div>
+    <div class="card">Sr. Manager IT – Monotech Systems Limited</div>
     <div class="card">Linux Administrator – M-Square Networks</div>
     <div class="card">System Administrator – Kumudam Publication</div>
 </section>
 
+<!-- NEW PROJECTS -->
+<section>
+    <h2>🚀 Projects</h2>
+    <div class="card">Microsoft 365 Migration – 500+ Users</div>
+    <div class="card">MFA & Conditional Access Implementation</div>
+    <div class="card">Automation using PowerShell & Power Automate</div>
+</section>
+
+<!-- NEW ACHIEVEMENTS -->
+<section>
+    <h2>🏆 Key Achievements</h2>
+    <div class="card">✔ Reduced IT workload by 30% through automation</div>
+    <div class="card">✔ Improved email security using Microsoft Defender</div>
+    <div class="card">✔ Implemented organization-wide security policies</div>
+</section>
+
 <section>
     <h2>🎓 Certifications</h2>
-    <div class="card">Microsoft Azure Administrator Associate</div>
+    <div class="card">Microsoft Azure Administrator</div>
     <div class="card">Red Hat Certified Technician</div>
     <div class="card">Microsoft Certified Specialist</div>
 </section>
 
 <section>
-    <h2>🎓 Qualification</h2>
-    <div class="card">BCA [Alagappa University] </div>
-    <div class="card">DME [Joe Tech]</div>
-    <div class="card">SSLC[Don Bosco higer Sec. School]</div>
+    <h2>🎓 Education</h2>
+    <div class="card">BCA – Alagappa University</div>
+    <div class="card">DME – Joe Tech</div>
+    <div class="card">SSLC – Don Bosco School</div>
 </section>
 
 <section>
     <h2>📞 Contact</h2>
     <div class="card">
-        📧 skyber30@gmail.com<br>
+        📧 skyber30@gmail.com <br>
         📱 +91 8754500456 <br>
         📍 Chennai, India <br><br>
-        <a href="https://drive.google.com/file/d/1_RFhzP1-Kd5DuIv7BXojV3MDzCcg3O3D/view" class="btn">Download CV</a>
+
+        <a href="https://drive.google.com/uc?export=download&id=1_RFhzP1-Kd5DuIv7BXojV3MDzCcg3O3D" class="btn">
+            Download CV
+        </a>
     </div>
 </section>
 
 <footer>
-    © 2026 S. Thomas Paul | Premium Portfolio
+    © 2026 S. Thomas Paul | Professional Portfolio
 </footer>
 
 <script>
-const text = ["IT Infrastructure Manager", "Cyber Security Expert", "Cloud & Network Specialist"];
+const text = ["IT Infrastructure Manager", "Cyber Security Expert", "Cloud Specialist"];
 let i = 0, j = 0, current = "", isDeleting = false;
 
 function type() {
@@ -168,7 +225,6 @@ function type() {
         setTimeout(type, 1000);
     }
 }
-
 type();
 </script>
 
